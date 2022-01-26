@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.js"],"names":["alert"],"mappings":"aAAAA,MAAM","file":"../app.js","sourcesContent":["alert(\"Hola mundo\");"]}
+{"version":3,"sources":["app.js"],"names":["console","log"],"mappings":"aAAAA,QAAQC,IAAI","file":"../app.js","sourcesContent":["console.log(\"Hola mundo\");"]}

@@ -8,11 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>Exsis - Test Project</title>
+    <title>Portfolio Lula</title>
   </head>
-  <body>
+  <body id="home" class="lula-home">
 
-    <h1>Hola Mundo</h1>
+    <div id="wrap-wrap" class="lula lula-wrap">
+
+      <header id="header" class="lula lula-header">
+        
+        @@include('web/index/_nav.html')
+
+      </header>
+      <main id="main-home" class="lula-main-home">
+        
+        @@include('web/partials/_main-article.html')
+
+      </main>
+
+    </div>
 
     <script src='https://kit.fontawesome.com/25f07c253e.js'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

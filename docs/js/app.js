@@ -1,2 +1,2 @@
-"use strict";alert("Hola mundo");
+"use strict";console.log("Hola mundo");
 //# sourceMappingURL=maps/app.js.map
