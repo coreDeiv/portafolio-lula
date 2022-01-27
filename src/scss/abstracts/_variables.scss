@@ -1,0 +1,32 @@
+:root {
+  
+  // -- Color Palette
+  --lula-color-floral-white:    #FFFDF5;
+  --lula-color-glaucous:        #687BBC;
+  --lula-color-dark-purple:     #201733;
+  --lula-color-xiketic:         #1B0E1D;
+  --lula-color-white:           #ffffff;
+  --lula-color-black:           #000000;
+  --lula-color-gray:            #707070;
+
+  // -- Fonts
+  --lula-font-family-primary:     'Syne',           sans-serif, serif;
+  --lula-font-family-secondary:   'ivypresto-text', sans-serif, serif;
+
+}
+
+// Palette Colors
+$floral-white:    #FFFDF5                           !default;
+$glaucous:        #687BBC                           !default;
+$dark-purple:     #201733                           !default;
+$xiketic:         #1B0E1D                           !default;
+
+// General Colors
+$white:           #FFF                              !default;
+$black:           #000                              !default;
+$gray:            #707070                           !default;
+$transparent:     transparent                         !default;
+
+// Fonts
+$syne:            'Syne', sans-serif, serif           !default;
+$ivy:             'ivypresto-text', sans-serif, serif !default;

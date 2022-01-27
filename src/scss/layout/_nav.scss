@@ -1,0 +1,73 @@
+.lula-nav {
+  position: relative;
+  top: -30px;
+  .lula-nav {
+    &-list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+      &__item {
+        &--dot {
+          position: relative;
+          margin-top: 0;
+          &:hover {
+            animation: link-dot-up forwards .3s;
+            a span {
+              opacity: 1;
+              color: $black;
+              height: calc(100% - 15px);
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 5px;
+              height: 5px;
+              background-color: $dark-purple;
+              border-radius: 50%;
+              opacity: .5;
+              animation: link-dot-down forwards .3s;
+              opacity: 0;
+              margin-top: 0;
+            }
+          }
+        }
+        &--link {
+          text-decoration: none;
+          span {
+            text-transform: capitalize;
+            font-family: $syne;
+            padding: 5px 20px;
+            font-size: 20px;
+            color: $gray;
+            opacity: .75;
+          }
+        }
+      }
+    }
+    &-list__button--icon { display: none; }
+    &-list__button--text {
+      &.active { 
+        padding-right: 40px;
+        position: relative;
+        span { 
+          padding-left: 0 !important;
+          color: $black !important; 
+          opacity: unset;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 85%;
+          border-right: 2px solid $black;
+          transform: rotate(35deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Navigator
+@keyframes link-dot-up {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -20px;
+    padding-bottom: 10px;
+  }
+}
+
+@keyframes link-dot-down {
+  0% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 1;
+  }
+}

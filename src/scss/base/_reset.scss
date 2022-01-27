@@ -1,0 +1,47 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 16px; /* 1rem = 10px */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px; /* 1rem = 10px */
+  font-family: $ivy;
+  color: #000;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &#home {
+    background-color: $floral-white;
+    overflow: hidden;
+    #wrap-wrap { 
+      background-image: url("../media/images/grid.jpeg");
+      max-height: 100vh;
+    }
+  }
+}
+
+#wrap-wrap {
+  width: 75%;
+  height: auto;
+  min-height: 70vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+}
