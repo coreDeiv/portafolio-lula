@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #000;
+  color: $dark-purple;
   font-size: 16px; /* 1rem = 10px */
 }
 
@@ -14,7 +14,7 @@ body, html {
   scroll-behavior: smooth;
   font-size: 16px; /* 1rem = 10px */
   font-family: $ivy;
-  color: #000;
+  color: $dark-purple;
   overflow-x: hidden;
 }
 
@@ -36,14 +36,13 @@ body {
 }
 
 #wrap-wrap {
-  width: 75%;
-  height: auto;
-  min-height: 70vh;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: unset;
+  @extend %wrap-wrap;
 }
 
 .light-grid { background-image: url("../media/images/light-grid.png"); }
-.dark-grid { background-image: url("../media/images/dark-grid.png"); }
+.dark-grid { 
+  background-image: url("../media/images/dark-grid.png"); 
+  .lula-projects .lula-container {
+    background-image: url("../media/images/dark-grid.png");
+  }
+}

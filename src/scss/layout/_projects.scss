@@ -1,0 +1,29 @@
+.lula-projects {
+  display: none;
+  &-active {
+    .lula-navbar {
+      z-index: 999;
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      ul li a, a span, a div span {
+        color: $white !important;
+      }
+      .lula-nav-list__button--text.active::before {
+        border-color: $white;
+      }
+    }
+  }
+  &.show-projects {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $dark-purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

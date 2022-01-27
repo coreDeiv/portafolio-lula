@@ -1,6 +1,6 @@
 .lula-nav {
   position: relative;
-  top: -30px;
+  top: -25px;
   .lula-nav {
     &-list {
       display: flex;
@@ -15,7 +15,7 @@
             animation: link-dot-up forwards .3s;
             a span {
               opacity: 1;
-              color: $black;
+              color: $dark-purple;
               height: calc(100% - 15px);
             }
             &::before {
@@ -40,10 +40,11 @@
           span {
             text-transform: capitalize;
             font-family: $syne;
-            padding: 5px 20px;
+            padding: 0.125rem 0.969rem;
             font-size: 20px;
             color: $gray;
             opacity: .75;
+            max-height: 24px;
           }
         }
       }
@@ -54,18 +55,19 @@
         padding-right: 40px;
         position: relative;
         span { 
-          padding-left: 0 !important;
-          color: $black !important; 
+          padding-left: 0;
+          color: $dark-purple; 
           opacity: unset;
         }
         &::before {
           content: "";
           position: absolute;
-          top: 0;
+          top: -5px;
           bottom: 0;
           left: 85%;
-          border-right: 2px solid $black;
+          border-right: 2px solid $dark-purple;
           transform: rotate(35deg);
+          height: 35px;
         }
       }
     }

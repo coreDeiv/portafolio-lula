@@ -22,8 +22,10 @@
       <main id="main-home" class="lula-main-home">
         
         @@include('web/partials/_main-article.html')
-
+        
       </main>
+      
+      @@include('web/index/_projects.html')
 
     </div>
 
@@ -33,6 +35,16 @@
     <script>
         var height = document.getElementById("main-home").offsetHeight - document.getElementById("main-home").offsetTop;
         document.documentElement.style.setProperty('--lula-content-focused-height', height + 'px');
+    </script>
+    <script>
+      // Cuando el usuario oprime en el boton de proyectos, le agrega la clase "lula-projects-active" al "wrap-wrap", y al id "lula-projects" le agrega al clase "show-projects"
+      document.getElementById("open-projects-menu").addEventListener("click", function(e){
+        e.preventDefault();
+        document.getElementById("wrap-wrap").classList.add("lula-projects-active");
+        document.getElementById("lula-projects").classList.add("show-projects");
+        document.getElementById("wrap-wrap").classList.remove("light-grid");
+        document.getElementById("wrap-wrap").classList.add("dark-grid");
+      });
     </script>
   </body>
 </html>
