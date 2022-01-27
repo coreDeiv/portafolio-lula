@@ -29,8 +29,7 @@ body {
   &#home {
     background-color: $floral-white;
     overflow: hidden;
-    #wrap-wrap { 
-      background-image: url("../media/images/grid.jpeg");
+    #wrap-wrap {
       max-height: 100vh;
     }
   }
@@ -45,3 +44,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: unset;
 }
+
+.light-grid { background-image: url("../media/images/light-grid.png"); }
+.dark-grid { background-image: url("../media/images/dark-grid.png"); }

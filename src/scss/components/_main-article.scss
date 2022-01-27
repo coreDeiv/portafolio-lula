@@ -18,6 +18,7 @@
         font-size: 1.375rem;
         font-family: $syne;
         margin-right: -15px;
+        font-weight: $regular;
       }
       &-description h1, h1 span {
         font-size: 10vh;
@@ -33,6 +34,7 @@
         margin-right: -15px;
         font-size: 2.2vh;
         position: relative;
+        font-weight: $regular;
         span {
           font-size: 2.2vh;
           text-decoration: underline;
@@ -66,6 +68,7 @@
           font-family: $syne;
           font-style: normal;
           letter-spacing: normal;
+          font-weight: $regular;
         }
       }
       &_asterisk {
