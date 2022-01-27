@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: $dark-purple;
+  color: $floral-white;
   font-size: 16px; /* 1rem = 10px */
 }
 
@@ -14,7 +14,7 @@ body, html {
   scroll-behavior: smooth;
   font-size: 16px; /* 1rem = 10px */
   font-family: $ivy;
-  color: $dark-purple;
+  color: $floral-white;
   overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   &#home {
-    background-color: $floral-white;
+    background-color: $glaucous;
     overflow: hidden;
     #wrap-wrap {
       max-height: 100vh;

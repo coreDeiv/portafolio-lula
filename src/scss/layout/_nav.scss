@@ -15,7 +15,7 @@
             animation: link-dot-up forwards .3s;
             a span {
               opacity: 1;
-              color: $dark-purple;
+              color: $floral-white;
               height: calc(100% - 15px);
             }
             &::before {
@@ -42,7 +42,7 @@
             font-family: $syne;
             padding: 0.125rem 0.969rem;
             font-size: 20px;
-            color: $gray;
+            color: rgba($floral-white, .5);
             opacity: .75;
             max-height: 24px;
           }
@@ -56,7 +56,7 @@
         position: relative;
         span { 
           padding-left: 0;
-          color: $dark-purple; 
+          color: $floral-white; 
           opacity: unset;
         }
         &::before {
@@ -65,7 +65,7 @@
           top: -5px;
           bottom: 0;
           left: 85%;
-          border-right: 2px solid $dark-purple;
+          border-right: 2px solid $floral-white;
           transform: rotate(35deg);
           height: 35px;
         }

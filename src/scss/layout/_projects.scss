@@ -6,8 +6,12 @@
       display: block;
       visibility: visible;
       opacity: 1;
+      .lula-nav-list__button--text.active span {
+        color: rgba($floral-white, 1) !important;
+      }
       ul li a, a span, a div span {
-        color: $white !important;
+        color: rgba($floral-white, .5) !important;
+        &:hover { color: rgba($floral-white, 1) !important; }
       }
       .lula-nav-list__button--text.active::before {
         border-color: $white;
@@ -90,13 +94,14 @@
       white-space: nowrap;
       text-align: right;
       transition: ease .3s all;
-      &:hover span, &:hover span * { color: $white; transition: ease .3s all; }
+      &:hover span, &:hover span sup, &:hover span sub { color: $white; transition: ease .3s all; }
+      &:hover span::before { color: $glaucous; transition: ease .3s all; }
       span:nth-child(2) {
         display: none;
       }
     }
     &-content-list__item a h2 span { 
-      color: rgba($white, .5); 
+      color: rgba($glaucous, .5); 
       width: 100%;
       &::before { 
         content: attr(data-subtitle); 
@@ -123,7 +128,7 @@
       position: relative;
       sup, sub { 
         font-family: $syne; 
-        color: rgba($white, .5);
+        color: rgba($glaucous, .5);
       }
       sub { 
         font-size: 1.125rem; 
@@ -142,7 +147,7 @@
         right: 20px;
         top: 0;
         height: 80%;
-        border-right: 1px solid rgba($white, .5);
+        border-right: 1px solid rgba($glaucous, .5);
         transform: translateX(90%) rotate(35deg);
       }
     }
