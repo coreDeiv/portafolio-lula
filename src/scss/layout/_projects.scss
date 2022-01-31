@@ -30,6 +30,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    z-index: 998;
   }
   .lula {
     &-container { @extend %wrap-wrap; position: relative; }

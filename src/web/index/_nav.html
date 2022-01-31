@@ -29,33 +29,3 @@
     </li>
   </ul>
 </nav>
-<script>
-  /*
-  
-    Si oprime en el boton con ID 'hamburguer'
-
-    - Al #wrap-wrap se le quita la clase lula-projects-active
-    - Al #lula-projects se le quita la clase show-projects
-    - Al #wrap-wrap se le cambia la clase dark-grid por light-grid
-
-    Si en general el section de los proyectos no esta activo redirecciona al home
-
-    Si esta en el home, no redirecciona pero togglea la clase "hamburguer-active" al #hamburguer
-
-  */
-  document.getElementById('hamburguer').addEventListener('click', function(e) {
-    e.preventDefault();
-    if (document.getElementById('wrap-wrap').classList.contains('lula-projects-active')) {
-      document.getElementById('wrap-wrap').classList.remove('lula-projects-active');
-      document.getElementById('lula-projects').classList.remove('show-projects');
-      document.getElementById('wrap-wrap').classList.add('light-grid');
-      document.getElementById('hamburguer').classList.add('hamburguer-active');
-    } else {
-      if (document.getElementById('lula-projects').classList.contains('show-projects')) {
-        window.location.href = 'index.html';
-      } else {
-        document.getElementById('hamburguer').classList.add('hamburguer-active');
-      }
-    }
-  });
-</script>
