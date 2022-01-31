@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Lula · Artesanias de Colombia</title>
+  </head>
+  <body id="adc" class="lula-home">
+
+    <div id="wrap-wrap" class="lula lula-wrap grid light-grid">
+
+      <header id="header" class="lula lula-header lula-header-dark">
+        
+        @@include('web/index/_nav.html')
+
+      </header>
+      <main id="lula-adc-1" class="lula-adc-1">
+        
+        @@include('web/partials/_adc-1.html')
+        
+      </main>
+      
+      @@include('web/index/_projects.html')
+
+    </div>
+
+    <script src='https://kit.fontawesome.com/25f07c253e.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        var height = document.getElementById("lula-adc-1").offsetHeight - document.getElementById("lula-adc-1").offsetTop;
+        document.documentElement.style.setProperty('--lula-content-focused-height', height + 'px');
+    </script>
+    <script>
+      // Cuando el usuario oprime en el boton de proyectos, le agrega la clase "lula-projects-active" al "wrap-wrap", y al id "lula-projects" le agrega al clase "show-projects"
+      document.getElementById("open-projects-menu").addEventListener("click", function(e){
+        e.preventDefault();
+        document.getElementById("wrap-wrap").classList.add("lula-projects-active");
+        document.getElementById("lula-projects").classList.add("show-projects");
+        document.getElementById("wrap-wrap").classList.remove("light-grid");
+        document.getElementById("wrap-wrap").classList.add("dark-grid");
+      });
+    </script>
+  </body>
+</html>

@@ -33,9 +33,16 @@ body {
       max-height: 100vh;
     }
   }
+  &#adc {
+    background-color: $floral-white;
+    overflow: hidden;
+    #wrap-wrap {
+      max-height: 100vh;
+    }
+  }
 }
 
-#wrap-wrap {
+#wrap-wrap, .grid {
   @extend %wrap-wrap;
 }
 
@@ -53,3 +60,5 @@ body {
     background-attachment: unset;
   }
 }
+
+.overflow { overflow: unset !important; }

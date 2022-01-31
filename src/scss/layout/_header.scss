@@ -1,0 +1,9 @@
+header.lula-header-dark {
+  ul li a {
+    span { color: $dark-purple !important; }
+    & > ::before { 
+      color: $dark-purple !important; 
+      border-color: $dark-purple !important;
+    }
+  }
+}
