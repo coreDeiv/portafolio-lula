@@ -25,7 +25,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $dark-purple;
+    background-color: $charleston-green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,14 +94,14 @@
       white-space: nowrap;
       text-align: right;
       transition: ease .3s all;
-      &:hover span, &:hover span sup, &:hover span sub { color: $white; transition: ease .3s all; }
-      &:hover span::before { color: $glaucous; transition: ease .3s all; }
+      &:hover span, &:hover span sup, &:hover span sub { color: $floral-white; transition: ease .3s all; }
+      &:hover span::before { color: $copper-penny; transition: ease .3s all; }
       span:nth-child(2) {
         display: none;
       }
     }
     &-content-list__item a h2 span { 
-      color: rgba($glaucous, .5); 
+      color: rgba($floral-white, .5); 
       width: 100%;
       &::before { 
         content: attr(data-subtitle); 
@@ -128,7 +128,7 @@
       position: relative;
       sup, sub { 
         font-family: $syne; 
-        color: rgba($glaucous, .5);
+        color: rgba($floral-white, .5);
       }
       sub { 
         font-size: 1.125rem; 
@@ -147,7 +147,7 @@
         right: 20px;
         top: 0;
         height: 80%;
-        border-right: 1px solid rgba($glaucous, .5);
+        border-right: 1px solid rgba($copper-penny, .5);
         transform: translateX(90%) rotate(35deg);
       }
     }
