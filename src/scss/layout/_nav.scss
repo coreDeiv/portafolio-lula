@@ -1,6 +1,9 @@
 .lula-nav {
   position: relative;
   top: -25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .lula-nav {
     &-list {
       display: flex;
@@ -26,7 +29,7 @@
               transform: translate(-50%, -50%);
               width: 8px;
               height: 8px;
-              background-color: $glaucous;
+              background-color: $copper-penny;
               border-radius: 50%;
               opacity: .5;
               animation: link-dot-down forwards .3s;
@@ -69,6 +72,27 @@
           transform: rotate(35deg);
           height: 35px;
         }
+      }
+    }
+  }
+  &-list-AdC {
+    .lula-nav-list__item--title a {
+      span {
+        color: $copper-penny !important;
+      }
+    }
+    .lula-nav-list__item--divider {
+      padding-right: 1rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -18px;
+        bottom: 0;
+        right: 10px;
+        border-right: 1px solid $charleston-green;
+        transform: rotate(35deg);
+        height: 35px;
       }
     }
   }
