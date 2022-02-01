@@ -40,6 +40,21 @@ body {
       max-height: 100vh;
     }
   }
+  &#adc2 {
+    background-color: $floral-white;
+    overflow: hidden;
+    #wrap-wrap {
+      max-height: 100vh;
+    }
+    img.image-sidebar {
+      width: auto;
+      min-width: 44vw;
+      max-width: 100%;
+      object-fit: cover; 
+      height: 100%;
+      z-index: -1;
+    }
+  }
 }
 
 #wrap-wrap, .grid {
@@ -71,3 +86,10 @@ body {
 }
 
 .pre-divider { padding-right: 1.25rem; }
+
+.no-grid { background-image: none; }
+
+.image-sidebar {
+  position: fixed;
+  right: 0;
+}

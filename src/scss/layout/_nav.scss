@@ -11,7 +11,7 @@
       align-items: center;
       list-style: none;
       &__item {
-        &--dot {
+        &--dot, &--dot.active {
           position: relative;
           margin-top: 0;
           &:hover {
@@ -37,6 +37,30 @@
               margin-top: 0;
             }
           }
+        }
+        &--dot.active {
+          top: -15px;
+          a span {
+            opacity: 1;
+            color: $floral-white;
+            height: calc(100% - 15px);
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background-color: $copper-penny;
+            border-radius: 50%;
+            opacity: .5;
+            animation: link-dot-down forwards .3s;
+            opacity: 0;
+            margin-top: 0;
+          }
+          &:hover { animation: none; }
         }
         &--link {
           text-decoration: none;
