@@ -40,12 +40,7 @@
     <script src='https://kit.fontawesome.com/25f07c253e.js'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="./js/app.js"></script>
-    <!-- <script>
-        var height = document.getElementById("lula-adc-1").offsetHeight - document.getElementById("lula-adc-1").offsetTop;
-        document.documentElement.style.setProperty('--lula-content-focused-height', height + 'px');
-    </script> -->
     <script>
-      // Cuando el usuario oprime en el boton de proyectos, le agrega la clase "lula-projects-active" al "wrap-wrap", y al id "lula-projects" le agrega al clase "show-projects"
       document.getElementById("open-projects-menu").addEventListener("click", function(e){
         e.preventDefault();
         document.getElementById("wrap-wrap").classList.add("lula-projects-active");
@@ -57,8 +52,11 @@
     <script>
       if (window.location.href.indexOf("artesanias-de-colombia-design-research.html") > -1) {
         document.getElementsByClassName("hidden-menu")[0].classList.remove("hidden-menu");
-        // Le agrega la clase "active" al elemento padre del elemento que el id "design-research"
         document.getElementById("design-research").parentElement.classList.add("active");
+        document.getElementById("open-projects-menu").addEventListener("click", function(e){
+          e.preventDefault();
+          document.getElementById("single-menu-project").classList.add("hidden-menu");
+        });
       }
     </script>
   </body>
