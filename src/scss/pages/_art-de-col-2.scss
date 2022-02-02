@@ -1,0 +1,54 @@
+.lula-adc2 {
+  &-container { 
+    display: block; 
+    max-width: 56%;
+  }
+  &-row { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 15px;
+  }
+  &-description {
+    text-align: right;
+    margin-right: 55px;
+    h1 {
+      font-family: $ivy;
+      color: $charleston-green;
+      font-style: italic;
+      font-weight: $semibold;
+      font-size: 50px;
+    }
+    strong, strong i {
+      color: $charleston-green;
+      font-size: 20px;
+      line-height: 40px;
+      font-family: $ivy;
+      font-style: italic;
+      font-weight: $regular;
+    }
+    p {
+      color: $charleston-green;
+      font-family: $syne;
+      margin-top: 31px;
+      line-height: 28px;
+    }
+  }
+  &-images {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      &:last-child {
+        margin-top: 20px; 
+        img {
+          min-height: 300px;
+        }
+      }
+      img {
+        max-width: 276px;
+        object-fit: cover;
+        object-position: left;
+      }
+    }
+  }
+}
